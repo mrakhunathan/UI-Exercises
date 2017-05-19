@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function fn()
+            {
+                document.getElementById("test").innerHTML = parseInt(document.getElementById("n1").value) + parseInt(document.getElementById("n2").value);
+                console.log(document.getElementById("test").value);
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Number 1
+                </td>
+                <td>
+                    <input type="number" id="n1">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Number 2
+                </td>
+                <td>
+                    <input type="number" id="n2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                </td>
+                <td align="right">
+                    <button value="Add" onclick="fn()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sum =
+                </td>
+                <td>
+                    <p id="test">
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

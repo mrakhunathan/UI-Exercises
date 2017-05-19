@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>Student List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function process()
+            {
+
+                var myObjectArray = [];
+                var myObject1 = {};
+                myObject1.studentName = document.getElementById("studentName").value;
+                myObject1.SubjectOne = document.getElementById("s1m1").value;
+                myObject1.SubjectTwo = document.getElementById("s1m2").value;
+                myObject1.SubjectThree = document.getElementById("s1m2").value;
+                myObjectArray.push(myObject1);
+
+                var myObject2 = {};
+                myObject2.studentName = document.getElementById("studentName2").value;
+                myObject2.SubjectOne = document.getElementById("s2m1").value;
+                myObject2.SubjectTwo = document.getElementById("s2m1").value;
+                myObject2.SubjectThree = document.getElementById("s2m1").value;
+                myObjectArray.push(myObject2);
+
+
+                var myObject3 = {};
+                myObject3.studentName = document.getElementById("studentName3").value;
+                myObject3.SubjectOne = document.getElementById("s3m1").value;
+                myObject3.SubjectTwo = document.getElementById("s3m1").value;
+                myObject3.SubjectThree = document.getElementById("s3m1").value;
+                myObjectArray.push(myObject3);
+                var myParentObject = {};
+                myParentObject.students = myObjectArray;
+
+                console.log(myParentObject);
+            }
+        </script>
+    </head>
+    <body>
+        <table cellspacing="5" cellpadding="5">
+            <tr>
+                <td>
+                    Student Name
+                </td>
+                <td>
+                    <input type="text" id="studentName">
+                </td>
+                <td>
+                    Mark 1
+                </td>
+                <td>
+                    <input type="number" id="s1m1">
+                </td>
+                <td>
+                    Mark 2
+                </td>
+                <td>
+                    <input type="number" id="s1m2">
+                </td>
+                <td>
+                    Mark 3
+                </td>
+                <td>
+                    <input type="number" id="s1m3">
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    Student Name
+                </td>
+                <td>
+                    <input type="text" id="studentName2">
+                </td>
+                <td>
+                    Mark 1
+                </td>
+                <td>
+                    <input type="number" id="s2m1">
+                </td>
+                <td>
+                    Mark 2
+                </td>
+                <td>
+                    <input type="number" id="s2m2">
+                </td>
+                <td>
+                    Mark 3
+                </td>
+                <td>
+                    <input type="number" id="s2m3">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Student Name
+                </td>
+                <td>
+                    <input type="text" id="studentName3">
+                </td>
+                <td>
+                    Mark 1
+                </td>
+                <td>
+                    <input type="number" id="s3m1">
+                </td>
+                <td>
+                    Mark 2
+                </td>
+                <td>
+                    <input type="number" id="s3m2">
+                </td>
+                <td>
+                    Mark 3
+                </td>
+                <td>
+                    <input type="number" id="s3m3">
+                </td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td align="right">
+                    <button value="Done" onclick="process()">
+                        Done
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+        <p id="data">
+
+        </p>
+    </body>
+</html>

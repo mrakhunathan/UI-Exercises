@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>Money Convertor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function calculate()
+            {
+                document.getElementById("euro").innerHTML = (parseInt((document.getElementById("num").value.toString())) * 0.014) + " &euro;";
+                document.getElementById("dollar").innerHTML = (parseInt((document.getElementById("num").value.toString())) * 0.016) + " &dollar;";
+                document.getElementById("pound").innerHTML = (parseInt((document.getElementById("num").value.toString())) * 0.012) + " &pound;";
+                console.log("calculate..." + document.getElementById("num").value);
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    Enter Amount In Inr
+                </td>
+                <td>
+                    <input type="number" id="num">
+                </td>
+                <td>
+                    <button onclick="calculate()">Calculate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Euro</td>
+                <td>
+                    <p id="euro"></p>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Dollar</td>
+                <td><p id="dollar"></p></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Pound</td>
+                <td><p id="pound"></p></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

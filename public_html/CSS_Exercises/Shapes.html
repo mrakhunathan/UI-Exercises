@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>CSS Shapes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .circle{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: blue;
+                box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+            }
+            .rectangle {
+                width: 200px;
+                height: 100px;
+                background: red;
+                box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+            }
+
+            .triangle-up {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid red;
+            }
+
+            .vertical-line{
+                width: 1px;
+                background-color: black;
+                height: 100%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div class="circle">
+                    </div>            
+                </td>
+                <td></td>
+                <td>
+                    <div class="rectangle">
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
